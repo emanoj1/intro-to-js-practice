@@ -1,3 +1,5 @@
+function exampleStuff(){
+
 // Outout variable
 let world = "Earth"
 
@@ -49,3 +51,34 @@ switch (weather) {
         console.log("Oh that weather")
         break;
 }
+}
+
+// FUNCTION AND SORTING
+let pokemonTeam = [
+    "pikachu",
+    "squirtle",
+    "charmander",
+    "mew",
+];
+
+// OPTION 1 - only sort
+function logTheTeam(){
+    sortedTeam = pokemonTeam.sort();
+
+    for (const pokemon of sortedTeam) {
+       console.log(pokemon)
+    }
+        
+    }
+
+logTheTeam();
+
+// OPTION 2 - sort with index value
+function logTheTeam2(){
+    sortedTeam = pokemonTeam.sort();
+
+    sortedTeam.forEach((pokemon, arrayIndex) => {
+        console.log(pokemon + " is at index of " + arrayIndex)
+    });
+}
+logTheTeam2();
